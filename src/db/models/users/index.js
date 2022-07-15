@@ -5,12 +5,16 @@ const { Schema } = mongoose;
 const projectSchema = new Schema({
   projectName: {
     type: String,
-    unique: true
   },
   repositoryPath: {
     type: String,
-    unique: true
   },
+  diffType: {
+    type: Number,
+  },
+  commitId: {
+    type: String,
+  }
 })
 
 const userSchema = new Schema({

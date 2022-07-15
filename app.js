@@ -18,7 +18,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (err,
 });
 
 
-app.use('/ssh', repositoryRoutes);
+app.use('/ssh/repository', repositoryRoutes);
 app.use('/user', userRoutes);
 
 app.listen(port, () => {

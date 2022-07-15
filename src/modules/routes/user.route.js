@@ -4,9 +4,11 @@ const router = express.Router();
 const {
   checkExistUser,
   addNewUser,
+  getAllUsers,
 } = require('../controllers/user.controller');
 
 router.get('/check', checkExistUser);
-router.post('/add', addNewUser);
+router.get('/add', addNewUser);
+router.get('/all', getAllUsers);
 
 module.exports = router;
